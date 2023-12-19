@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/pattern-background-desktop.svg);
+    font-family: 'Red Hat Display', sans-serif;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+
+}
+
+.cartao {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 195px 350px;
+    justify-content: center;
+    padding: 30px;
+    text-transform: capitalize;
+}
+
+.imgMenino {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.textoUm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 25px;
+    background: hsl(225, 100%, 98%);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.textoUm h1 {
+    color: hsl(223, 47%, 23%);
+}
+
+.textoUm p {
+    color: hsl(224, 23%, 55%);
+}
+
+.textoDois {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: hsla(224, 23%, 55%, 0.06);
+    border-radius: 10px;
+    
+}
+
+.iconeMusica {
+   position: relative;
+   left: 25px;
+}
+
+.textoDois a {
+    text-decoration: none;
+}
+
+.textoDois span {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+
+.botaoUm,
+.botaoDois {
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.botaoUm {
+
+    background: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+}
+
+.botaoUm:hover {
+    background: hsl(245, 87%, 24%);
+    transition: 5000ms;
+
+}
+
+.botaoDois {
+
+    background: hsl(225, 100%, 98%);
+    color: hsl(224, 65%, 20%);
+    font-weight: 700;
+
+}
+
+.botaoDois:hover {
+
+    background: white;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 15px;
+
+}
+
+@media (max-width:420px) {
+    .cartao {
+        grid-template-columns: 300px;
+        grid-template-rows: 146px 380px;
+    }
+.iconeMusica {
+    left: 15px;
+}
+}
